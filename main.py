@@ -22,9 +22,6 @@ def list(file_name:str):
     elif file_name == 'builds':
         for j in range(len(data['builds'])):
             print(f"*{data['builds'][j]['name']}")
-    else:
-        print('Нет такого файла')
-
 @main.command()
 @click.argument('file_name')
 @click.argument('name')
@@ -40,9 +37,6 @@ def get(file_name:str, name:str):
         for item in builds['builds']:
             if item['name'] == name:
                 list_tasks.extend(item.get('tasks'))
-            else:
-                print('Нет такого билда')
-                return
         for j in item.get('tasks'):
             for i in tasks['tasks']:
                 if i['name'] == j:
@@ -51,10 +45,7 @@ def get(file_name:str, name:str):
     elif file_name == 'tasks':
         for item in tasks['tasks']:
             if item['name'] == name:
-                print('Name', name,"\n","Dependencies:", *item.get('dependencies'))
-            else:
-                print('Нет такой таски')
-                return
+                print('Name', name,"\n","Dependencies:", *item.get('dependencies'))    
     else:
         print('Нет такой опции')
 
