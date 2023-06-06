@@ -1,0 +1,13 @@
+builds:
+- name: approach_important
+  tasks:
+  - map_gray_centaurs
+- name: audience_stand
+  tasks:
+  - enable_fuchsia_fairies
+  - read_blue_witches
+  - upgrade_olive_gnomes
+- name: time_alone
+  tasks:
+  - design_olive_cyclops
+  - upgrade_lime_leprechauns
