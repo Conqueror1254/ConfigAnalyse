@@ -35,3 +35,18 @@ CLI
     python main.py list file_name, где file_name - имя обрабатываемого файла
 вызов функции get():
     python main.py get file_name name, где file_name - имя обрабатываемого файла, name - имя нужного билда или задачи
+
+Тесты
+---------------------------------------
+тесты находятся в файле tests.py, запуск через консоль:
+
+pytest.exe tests.py
+
+Список тестов:
+
+1) test_is_tasks_exist - тест на наличие файлa tasks.yaml 
+2) test_is_builds_exist - тест на наличие файлa builds.yaml
+3) test_is_empty_file_tasks - тест на пустоту файла tasks.yaml
+4) test_is_empty_file_builds  - тест на пустоту файла builds.yaml 
+5) test_is_task_exists - тест на наличие тасков файле tasks.yaml
+6) test_is_build_exists - тест на наличие билдов в файле builds.yaml

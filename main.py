@@ -62,3 +62,4 @@ def get(file_name:str, name:str):
         print('Нет такой опции')
 if __name__=='__main__':
     main()
+
